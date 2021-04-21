@@ -1,0 +1,25 @@
+@font-face {
+  font-family: Augustina;
+  src: url(../assets/fonts/agustina.otf);
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../assets/fonts/montserrat.ttf);
+}
+body {
+    font-size: 0.5rem;
+    color: white;
+    background: #000;
+    /*font-family: Montserrat;*/
+}
+h1 {
+}
+.title {
+  font-weight: 100;
+  font-size: 1.4rem;
+  font-family: Augustina;
+}
+.quote {
+  position: relative;
+  top: 5px;
+}

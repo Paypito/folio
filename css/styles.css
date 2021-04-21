@@ -6,20 +6,100 @@
   font-family: Montserrat;
   src: url(../assets/fonts/montserrat.ttf);
 }
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 body {
     font-size: 0.5rem;
     color: white;
     background: #000;
-    /*font-family: Montserrat;*/
+    font-family: Montserrat;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+nav.nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100%;
+  position: fixed;
 }
 h1 {
+  width:100%;
+  padding: 0px 0px 0px 20px;
+  position: relative;
+  top: 10px;
+}
+h2{
+  font-size: 25px;
 }
 .title {
   font-weight: 100;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-family: Augustina;
 }
 .quote {
   position: relative;
+  font-size: 1.4rem;
+  margin: 10px;
   top: 5px;
+  font-weight: bold;
+}
+.navLink {
+  display: flex;
+  flex-direction: row;
+  font-size: 1rem;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.navLink > li > a {
+  font-size: 0.8rem;
+  padding: 10px 15px 10px 15px;
+  margin-right: 20px;
+  border-radius: 5%;
+}
+
+.navLink > li > a:hover {
+  background-color: #C0392B;
+}
+
+.navLink > li > a:active {
+  background-color: #cc4f41;
+}
+
+.border-red {
+  border: solid 1px #C0392B;
+}
+.home {
+  height: 100vh;
+  flex-direction: row;
+
+  display: flex;
+  align-items: center;
+  padding: 0 10% 0 10%;
+  justify-content: space-between;
+}
+.about {
+  height: 100vh;
+  background-color: grey;
+}
+.profilImg {
+  opacity: 0.8;
+}
+.names {
+  font-size: 100px;
+}
+.social-media {
+  display: flex;
+  flex-direction: row;
+}
+.social-media > li > a > img {
+  height: 35px;
+  margin: 15px;
 }

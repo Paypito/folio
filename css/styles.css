@@ -203,7 +203,8 @@ h2{
     flex-direction: column;
   }
   .profilImg {
-    transform: translateY(-10%) translateX(+30%);
+    min-width: 300px;
+    transform: translateY(0%) translateX(+30%);
   }
   .names {
     font-size: 3rem;

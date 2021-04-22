@@ -154,6 +154,7 @@ h2{
     flex-direction: column;
   }
   .profilImg {
+    height: 70%;
     width: 70%;
   }
   .names {

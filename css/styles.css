@@ -80,7 +80,19 @@ h2{
   width: 100%;
   justify-content: flex-end;
 }
-
+.hamburger {
+  display: none;
+  margin: 20px;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #C0392B;
+}
 .navLink > li > a {
   font-size: 0.8rem;
   padding: 10px 15px 10px 15px;
@@ -106,6 +118,9 @@ h2{
   align-items: center;
   padding: 0 10% 0 10%;
   justify-content: space-between;
+  /* flex-wrap: wrap;
+  padding-top: 50px;
+  justify-content: center; */
 }
 .about {
   height: 100vh;
@@ -130,4 +145,57 @@ h2{
   padding: 5px;
   font-family: Montserrat-Thin;
   font-size: 1.5rem;
+}
+
+@media (max-width: 48em) {
+  .home {
+    text-align: center;
+    flex-wrap: wrap;
+    padding-top: 10%;
+    justify-content: center;
+  }
+  nav.nav {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .navLink {
+    display: block;
+    position: fixed;
+    right: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #302f2f;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    width: auto;
+    margin: 5%;
+  }
+  .navLink > li > a {
+    margin-left: 20px;
+  }
+  .navLink.active {
+      right: 0;
+  }
+
+  .navLink > li {
+      margin: 2.5rem 0;
+  }
+
+  .hamburger {
+      display: block;
+      cursor: pointer;
+  }
+  
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+  }
 }

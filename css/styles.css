@@ -155,6 +155,7 @@ h2{
   }
   .profilImg {
     width: 65%;
+    min-height: auto;
   }
   .names {
     font-size: 4rem;

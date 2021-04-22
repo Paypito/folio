@@ -148,14 +148,14 @@ h2{
 }
 @media (max-width: 48em) {
   .home {
+    align-items: center;
     text-align: center;
     padding-top: 50px;
     justify-content: center;
     flex-direction: column;
   }
   .profilImg {
-    min-width: 65%;
-    min-height: auto;
+    width: 80%;
   }
   .names {
     font-size: 4rem;

@@ -31,6 +31,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  box-sizing: border-box;
 }
 body {
     overflow: overlay;
@@ -136,10 +137,59 @@ h2{
 .social-media {
   display: flex;
   flex-direction: row;
+  animation-name: fadeIn;
+  -webkit-animation-name: fadeIn; 
+  animation-duration: 2s;   
+  -webkit-animation-duration: 2s;
+  animation-timing-function: ease-in-out; 
+  -webkit-animation-timing-function: ease-in-out;     
+  visibility: visible !important; 
+}
+@keyframes fadeIn {
+  0% {
+      transform: scale(0);
+      opacity: 0.0;       
+  }
+  60% {
+      transform: scale(1.1);  
+  }
+  80% {
+      transform: scale(0.9);
+      opacity: 1; 
+  }   
+  100% {
+      transform: scale(1);
+      opacity: 1; 
+  }       
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+      -webkit-transform: scale(0);
+      opacity: 0.0;       
+  }
+  60% {
+      -webkit-transform: scale(1.1);
+  }
+  80% {
+      -webkit-transform: scale(0.9);
+      opacity: 1; 
+  }   
+  100% {
+      -webkit-transform: scale(1);
+      opacity: 1; 
+  }       
 }
 .social-media > li > a > img {
   height: 35px;
   margin: 15px;
+}
+.social-media > li > a > img:hover {
+  box-shadow: 0 0 0 10px #C0392B;
+  background-color: #C0392B;
+  -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        border-radius: 8px;
 }
 .animatedText {
   padding: 5px;
@@ -153,8 +203,7 @@ h2{
     flex-direction: column;
   }
   .profilImg {
-    height: 70%;
-    width: 70%;
+    transform: translateY(-10%) translateX(+30%);
   }
   .names {
     font-size: 3rem;

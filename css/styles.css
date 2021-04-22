@@ -112,7 +112,7 @@ h2{
   border: solid 1px #C0392B;
 }
 .home {
-  height: 100vh;
+  min-height: 100vh;
   flex-direction: row;
   display: flex;
   align-items: center;
@@ -149,9 +149,12 @@ h2{
 @media (max-width: 48em) {
   .home {
     text-align: center;
-    padding-top: 10%;
+    padding-top: 50px;
     justify-content: center;
     flex-direction: column;
+  }
+  .profilImg {
+    width: 65%;
   }
   .names {
     font-size: 4rem;

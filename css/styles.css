@@ -148,7 +148,6 @@ h2{
 }
 @media (max-width: 48em) {
   .home {
-    text-align: center;
     padding-top: 50px;
     justify-content: center;
     flex-direction: column;
@@ -203,5 +202,11 @@ h2{
 
   .hamburger.active .bar:nth-child(3) {
       transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .home {
+    padding-top: 0px;
   }
 }

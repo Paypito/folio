@@ -9,7 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Alexandre Fernandez</title>
   </head>
-  <body>
+  <body id="content">
     <script src="js/scripts.js"></script>
     <header>
       <nav class="nav">
@@ -28,11 +28,18 @@
           <h2>WELCOM TO MY PORTFOLIO !</h2>
           <br><br>
           <div class="names">
-            <span style="font-weight: 100; letter-spacing: 4.0;">Fernandez</span>
+            <span style="font-weight: 100; letter-spacing: 4.0; font-family: Montserrat-Thin;">Fernandez</span>
             <br>
             <span style="font-weight: bold; letter-spacing: 5.0">Alexandre</span>
           </div>
-          <div>IT Student</div>
+          <div class="animatedText">
+            <img alt="play arrow" src="assets/play.png" height="15px"> 
+            <span
+            class="txt-rotate"
+            data-period="1000"
+            data-rotate='[ " Developer", " IT Student", " Webmaster", " IT Analyst" ]'></span>
+          </div>
+          <br>
           <ul class="social-media">
             <li><a href="#home"><img src="https://img.icons8.com/metro/208/ffffff/facebook-new--v2.png"></a></li>
             <li><a href="#home"><img src="https://img.icons8.com/ios-glyphs/480/ffffff/instagram-new.png"></a></li>

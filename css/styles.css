@@ -6,12 +6,34 @@
   font-family: Montserrat;
   src: url(../assets/fonts/montserrat.ttf);
 }
+@font-face {
+  font-family: Montserrat-Thin;
+  src: url(../assets/fonts/Montserrat-Thin.ttf);
+}
+/* width */
+.showing::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #C0392B;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #cc4f41;
+}
 * {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 body {
+    overflow: overlay;
     font-size: 0.5rem;
     color: white;
     background: #000;
@@ -28,15 +50,16 @@ nav.nav {
   align-items: center;
   width: 100%;
   position: fixed;
+  z-index: 10;
 }
 h1 {
-  width:100%;
-  padding: 0px 0px 0px 20px;
-  position: relative;
-  top: 10px;
+  padding: 10px 0px 0px 20px;
+  display: flex;
+  flex-wrap: nowrap;
 }
 h2{
-  font-size: 25px;
+  font-size: 1.2rem;
+  font-weight: 300;
 }
 .title {
   font-weight: 100;
@@ -79,7 +102,6 @@ h2{
 .home {
   height: 100vh;
   flex-direction: row;
-
   display: flex;
   align-items: center;
   padding: 0 10% 0 10%;
@@ -87,13 +109,14 @@ h2{
 }
 .about {
   height: 100vh;
-  background-color: grey;
+  background-color: #212121;
 }
 .profilImg {
   opacity: 0.8;
+  width: 50%;
 }
 .names {
-  font-size: 100px;
+  font-size: 4rem;
 }
 .social-media {
   display: flex;
@@ -102,4 +125,9 @@ h2{
 .social-media > li > a > img {
   height: 35px;
   margin: 15px;
+}
+.animatedText {
+  padding: 5px;
+  font-family: Montserrat-Thin;
+  font-size: 1.5rem;
 }

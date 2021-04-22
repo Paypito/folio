@@ -157,7 +157,7 @@ h2{
     width: 70%;
   }
   .names {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   nav.nav {
     width: 100%;
@@ -208,5 +208,8 @@ h2{
 @media only screen and (max-device-width: 480px) {
   .home {
     padding-top: 10px;
+  }
+  .names {
+    font-size: 2rem;
   }
 }

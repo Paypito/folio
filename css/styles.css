@@ -149,15 +149,12 @@ h2{
 @media (max-width: 48em) {
   .home {
     text-align: center;
-    flex-wrap: wrap;
     padding-top: 10%;
     justify-content: center;
-  }
-  .profilImg {
-    width: 65%;
+    flex-direction: column;
   }
   .names {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   nav.nav {
     width: 100%;

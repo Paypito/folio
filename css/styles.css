@@ -205,8 +205,8 @@ h2{
   }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-device-width: 480px) {
   .home {
-    padding-top: 0px;
+    padding-top: 10px;
   }
 }

@@ -213,3 +213,9 @@ h2{
     font-size: 2rem;
   }
 }
+
+@media only screen and (max-device-height: 580px) {
+  .home {
+    padding-top: 50px;
+  }
+}

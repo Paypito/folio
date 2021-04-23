@@ -320,6 +320,7 @@ h3 {
   }
   .technologies > li{
     padding: 2%;
+    white-space: nowrap;
   }
 }
 

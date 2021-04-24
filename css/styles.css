@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: Augustina;
   src: url(../assets/fonts/agustina.otf);
@@ -31,7 +32,8 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 body {
     overflow: overlay;
@@ -51,14 +53,27 @@ p {
   line-height: 1.5rem;
 }
 nav.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   position: fixed;
   z-index: 10;
-  animation: expand 2s;
+  -webkit-animation: expand 2s;
+          animation: expand 2s;
+}
+@-webkit-keyframes expand{
+  0%{height: 0px}
+  100%{height: 70px}
 }
 @keyframes expand{
   0%{height: 0px}
@@ -66,8 +81,11 @@ nav.nav {
 }
 h1 {
   padding: 10px 0px 0px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 h2{
   font-size: 1.2rem;
@@ -86,11 +104,18 @@ h2{
   font-weight: bold;
 }
 .navLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   font-size: 1rem;
   width: 100%;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .hamburger {
   display: none;
@@ -102,6 +127,7 @@ h2{
   height: 3px;
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: #C0392B;
 }
@@ -125,11 +151,20 @@ h2{
 }
 .home {
   min-height: 100vh;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0 10% 0 10%;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   overflow: hidden;
   /* flex-wrap: wrap;
   padding-top: 50px;
@@ -139,14 +174,22 @@ h2{
   min-height: 100vh;
   background-color: #212121;
   padding: 7% 2% 7% 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .leftAbout {
   max-width: 60%;
 }
 .aboutImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .aboutImg > li {
@@ -158,8 +201,13 @@ h3 {
   padding-top: 10%;
 }
 .technologies {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 4%;
   /*columns: 2;*/
 }
@@ -175,8 +223,13 @@ h3 {
   font-size: 4rem;
 }
 .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   animation-name: fadeIn;
   -webkit-animation-name: fadeIn; 
   animation-duration: 2s;   
@@ -187,18 +240,22 @@ h3 {
 }
 @keyframes fadeIn {
   0% {
-      transform: scale(0);
+      -webkit-transform: scale(0);
+              transform: scale(0);
       opacity: 0.0;       
   }
   60% {
-      transform: scale(1.1);  
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);  
   }
   80% {
-      transform: scale(0.9);
+      -webkit-transform: scale(0.9);
+              transform: scale(0.9);
       opacity: 1; 
   }   
   100% {
-      transform: scale(1);
+      -webkit-transform: scale(1);
+              transform: scale(1);
       opacity: 1; 
   }       
 }
@@ -225,11 +282,10 @@ h3 {
   margin: 15px;
 }
 .social-media > li > a > img:hover {
-  box-shadow: 0 0 0 10px #C0392B;
+  -webkit-box-shadow: 0 0 0 10px #C0392B;
+          box-shadow: 0 0 0 10px #C0392B;
   background-color: #C0392B;
-  -webkit-border-radius: 8px;
-        -moz-border-radius: 8px;
-        border-radius: 8px;
+  border-radius: 8px;
 }
 .animatedText {
   padding: 5px;
@@ -245,29 +301,43 @@ h3 {
 @media (max-width: 48em) {
   .home {
     padding-top: 50px;
-    justify-content: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .profilImg {
     min-width: 300px;
-    transform: translateY(0%) translateX(+30%);
+    -webkit-transform: translateY(0%) translateX(+30%);
+        -ms-transform: translateY(0%) translateX(+30%);
+            transform: translateY(0%) translateX(+30%);
   }
   .names {
     font-size: 3rem;
   }
   nav.nav {
     width: 100%;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .navLink {
     display: block;
     position: fixed;
     right: -100%;
     top: 5rem;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background-color: #302f2f;
     border-radius: 10px;
     text-align: center;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
     width: auto;
     margin: 5%;
@@ -293,19 +363,28 @@ h3 {
   }
 
   .hamburger.active .bar:nth-child(1) {
-      transform: translateY(8px) rotate(45deg);
+      -webkit-transform: translateY(8px) rotate(45deg);
+          -ms-transform: translateY(8px) rotate(45deg);
+              transform: translateY(8px) rotate(45deg);
   }
 
   .hamburger.active .bar:nth-child(3) {
-      transform: translateY(-8px) rotate(-45deg);
+      -webkit-transform: translateY(-8px) rotate(-45deg);
+          -ms-transform: translateY(-8px) rotate(-45deg);
+              transform: translateY(-8px) rotate(-45deg);
   }
   .about {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
     padding: 10% 2% 10% 2%;
   }
   .aboutImg {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .leftAbout {
     max-width: 100%;
@@ -314,9 +393,15 @@ h3 {
     font-size: 3.5rem;
   }
   .technologies {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .technologies > li{
     padding: 2%;

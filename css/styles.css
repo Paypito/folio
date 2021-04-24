@@ -324,7 +324,7 @@ h3 {
   }
 }
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-width: 480px) {
   .home {
     padding-top: 10px;
   }
@@ -340,7 +340,7 @@ h3 {
   }
 }
 
-@media only screen and (max-device-height: 580px) {
+@media only screen and (max-height: 580px) {
   .home {
     padding-top: 50px;
   }

@@ -272,6 +272,7 @@ h3 {
 .box > p {
   font-size: 0.7rem;
   line-height: normal;
+  padding-top: 2%;
 }
 /* Mobile Version */
 @media (max-width: 48em) {
@@ -359,8 +360,18 @@ h3 {
     text-align: center;
   }
   .skillsBoxes {
+    justify-content: center;
+    align-items: center;
     display: flex;
     flex-direction: column;
+  }
+  .skillsBoxes > li {
+    display: flex;
+    justify-content: center;
+  }
+  .box {
+    width: 80%;
+    height: 100%;
   }
 }
 

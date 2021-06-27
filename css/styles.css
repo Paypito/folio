@@ -112,7 +112,7 @@ h2{
   border-radius: 5%;
 }
 
-.navLink > li > a:hover {
+.navLink > li > a:hover, .button-red:hover {
   background-color: #C0392B;
 }
 
@@ -122,6 +122,12 @@ h2{
 
 .border-red {
   border: solid 1px #C0392B;
+}
+.button-red {
+  border: solid 1px #C0392B;
+  font-size: 0.8rem;
+  padding: 10px 15px 10px 15px;
+  border-radius: 5%;
 }
 .home {
   min-height: 100vh;
@@ -143,12 +149,13 @@ h2{
   justify-content: space-evenly;
   align-items: center;
 }
-.skills {
+.skills, .projects {
   min-height: 100vh;
-  padding: 7% 2% 7% 2%;
+  padding: 7% 2% 0% 2%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-direction: column;
 }
 .leftAbout {
   max-width: 60%;
@@ -247,12 +254,13 @@ h3 {
   font-size: 4rem;
   font-family: Montserrat-Thin;
   margin-bottom: 3%;
+  text-align: center;
 }
 .box {
   background-color: #212121;
   border-radius: 15px;
   width: 50vh;
-  height: 30vh;
+  min-height: 30vh;
   margin: 15px;
   padding: 0 5% 0 5%;
   transition: all 0.2s ease-in-out;
@@ -260,6 +268,7 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   overflow: hidden;
 }
 .box:hover {
@@ -268,11 +277,17 @@ h3 {
 .skillsBoxes {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .box > p {
   font-size: 0.7rem;
   line-height: normal;
   padding-top: 2%;
+}
+.box > img {
+  width: 20%;
+  margin-top: 5%;
 }
 /* Mobile Version */
 @media (max-width: 48em) {
@@ -356,7 +371,7 @@ h3 {
     white-space: nowrap;
   }
   .skills {
-    padding: 15% 2% 15% 2%;
+    padding: 15% 2% 0% 2%;
     text-align: center;
   }
   .skillsBoxes {
@@ -372,6 +387,10 @@ h3 {
   .box {
     width: 80%;
     height: 100%;
+  }
+  .projects {
+    padding: 15% 2% 0% 2%;
+    text-align: center;
   }
 }
 

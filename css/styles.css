@@ -143,6 +143,13 @@ h2{
   justify-content: space-evenly;
   align-items: center;
 }
+.skills {
+  min-height: 100vh;
+  padding: 7% 2% 7% 2%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 .leftAbout {
   max-width: 60%;
 }
@@ -241,6 +248,31 @@ h3 {
   font-family: Montserrat-Thin;
   margin-bottom: 3%;
 }
+.box {
+  background-color: #212121;
+  border-radius: 15px;
+  width: 50vh;
+  height: 30vh;
+  margin: 5px;
+  padding: 0 5% 0 5%;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  overflow: hidden;
+}
+.box:hover {
+  box-shadow: 0 5px 15px #C0392B;
+}
+.skillsBoxes {
+  display: flex;
+  flex-direction: row;
+}
+.box > p {
+  font-size: 0.7rem;
+  line-height: normal;
+}
 /* Mobile Version */
 @media (max-width: 48em) {
   .home {
@@ -321,6 +353,14 @@ h3 {
   .technologies > li{
     padding: 2%;
     white-space: nowrap;
+  }
+  .skills {
+    padding: 15% 2% 15% 2%;
+    text-align: center;
+  }
+  .skillsBoxes {
+    display: flex;
+    flex-direction: column;
   }
 }
 

@@ -259,8 +259,6 @@ h3 {
 .box {
   background-color: #212121;
   border-radius: 15px;
-  width: 50vh;
-  min-height: 30vh;
   margin: 15px;
   padding: 0 5% 0 5%;
   transition: all 0.2s ease-in-out;
@@ -277,8 +275,11 @@ h3 {
 .skillsBoxes {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
+}
+.skillsBoxes > li {
+  flex: 1 0 33%;
 }
 .box > p {
   font-size: 0.7rem;
@@ -387,17 +388,11 @@ footer {
     text-align: center;
   }
   .skillsBoxes {
-    justify-content: center;
     align-items: center;
-    display: flex;
-    flex-direction: column;
   }
   .skillsBoxes > li > a {
     display: flex;
     justify-content: center;
-  }
-  .box {
-    flex-basis: 100%;
   }
 }
 

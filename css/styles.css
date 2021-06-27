@@ -397,8 +397,7 @@ footer {
     justify-content: center;
   }
   .box {
-    width: 80%;
-    height: 100%;
+    flex-basis: 100%;
   }
 }
 

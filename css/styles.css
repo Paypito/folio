@@ -365,7 +365,7 @@ h3 {
     display: flex;
     flex-direction: column;
   }
-  .skillsBoxes > li {
+  .skillsBoxes > li > a {
     display: flex;
     justify-content: center;
   }

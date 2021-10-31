@@ -392,7 +392,7 @@ footer {
     text-align: center;
   }
   .projectBoxes > li {
-    flex: 0 1 50%;
+    flex: 1 0 50%;
   }
 }
 

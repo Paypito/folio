@@ -151,7 +151,7 @@ h2{
 }
 .skills, .projects, .contact {
   min-height: 100vh;
-  padding: 5% 2% 0% 2%;
+  padding: 0% 2% 0% 2%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -268,11 +268,12 @@ h3 {
   justify-content: space-around;
   align-items: center;
   overflow: hidden;
+  min-height: 90%;
 }
 .box:hover {
   box-shadow: 0 5px 15px #C0392B;
 }
-.skillsBoxes {
+.skillsBoxes, .projectBoxes {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -281,13 +282,16 @@ h3 {
 .skillsBoxes > li {
   flex: 1 0 33%;
 }
+.projectBoxes > li {
+  flex: 0 1 33%;
+}
 .box > p {
   font-size: 0.7rem;
   line-height: normal;
   padding-top: 2%;
 }
 .box > img {
-  width: 20%;
+  width: 10vh;
   margin-top: 5%;
 }
 .box > i {
@@ -387,12 +391,8 @@ footer {
     padding: 15% 2% 0% 2%;
     text-align: center;
   }
-  .skillsBoxes {
-    align-items: center;
-  }
-  .skillsBoxes > li > a {
-    display: flex;
-    justify-content: center;
+  .projectBoxes > li {
+    flex: 0 1 50%;
   }
 }
 
@@ -410,10 +410,16 @@ footer {
   .about {
     padding: 25% 2% 25% 2%;
   }
+  .skillsBoxes > li {
+    flex: 1 0 50%;
+  }
 }
 
 @media only screen and (max-height: 580px) {
   .home {
     padding-top: 50px;
+  }
+  .box {
+    max-width: 100%;
   }
 }

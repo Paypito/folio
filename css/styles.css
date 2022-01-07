@@ -302,7 +302,7 @@ h3 {
 footer {
   text-align: center;
   background-color: #212121;
-  padding: 1%;
+  padding: 3vh;
   font-family: Montserrat-Thin;
   font-size: 0.6rem;
 }
@@ -392,7 +392,7 @@ footer {
     text-align: center;
   }
   .projectBoxes > li {
-    flex: 1 0 50%;
+    flex: 1 0 100%;
   }
 }
 

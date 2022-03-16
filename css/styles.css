@@ -172,14 +172,23 @@ h3 {
   padding-top: 10%;
 }
 .technologies {
-  display: flex;
-  flex-direction: column;
-  padding: 4%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 10% 4% 4% 4%;
   /*columns: 2;*/
 }
-.technologies > li{
-  padding: 5%;
+.technologies > li {
+  padding: 5% 0 5% 0;
+  text-align: center;
   font-size: 1rem;
+}
+.technologies > li > img {
+  width: 50px;
+  transition: width 1s;
+}
+.technologies > li > img:hover {
+  width: 65px;
+  filter: brightness(0) saturate(100%) invert(26%) sepia(34%) saturate(3409%) hue-rotate(342deg) brightness(101%) contrast(89%);
 }
 .profilImg {
   opacity: 0.8;
@@ -379,12 +388,9 @@ footer {
     font-size: 3.5rem;
   }
   .technologies {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
   }
   .technologies > li{
-    padding: 2%;
     white-space: nowrap;
   }
   .skills, .projects, .contact {

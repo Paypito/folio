@@ -315,8 +315,20 @@ footer {
   font-family: Montserrat-Thin;
   font-size: 0.6rem;
 }
+.pub{
+  display: block;
+}
+.pubMobile {
+  display: none;
+}
 /* Mobile Version */
 @media (max-width: 48em) {
+  .pub{
+    display: none;
+  }
+  .pubMobile {
+    display: block;
+  }
   .home {
     padding-top: 50px;
     justify-content: center;
